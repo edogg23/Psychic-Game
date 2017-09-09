@@ -9,6 +9,12 @@
     var compChoice = " ";
     
     
+    var woutput = document.getElementById("woutput");
+        woutput.innerHTML = "wins " + win;
+
+    var loutput = document.getElementById("loutput");
+          loutput.innerHTML = "losses " + losses;
+
 
 
 
@@ -21,6 +27,13 @@
     	// Computer choses a random letter from the array
     	compChoice = letters[Math.floor(Math.random() * letters.length)];
     	console.log('The computer\'s guess: ' + compChoice);
+
+    	
+
+        
+
+        // var gleft = document.getElementById("gleft");
+        // gleft.innerHTML = "Guesses Left: " + guessesLeft;
 
     	if (usrChoice === compChoice) {
     	    console.log("correct");
@@ -39,7 +52,13 @@
           console.log("losses: " + losses);
           console.log("guesses left: " + guessesLeft);
           console.log("guesses so far: " + guessedSoFar);
-        // if (true) {}
+
+    	var gleft = document.getElementById("gleft");
+    		gleft.innerHTML = "Guesses left " + guessesLeft; 
+
+    	var gsofar = document.getElementById("gsofar");
+    		gsofar.innerHTML = "Your Guesses so far " +  guessedSoFar;    
+        
     }
 
 	
