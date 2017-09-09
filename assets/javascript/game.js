@@ -26,13 +26,19 @@
     	    console.log("correct");
     	    win++;
     	    alert("You won")
+    	    guessesLeft--;
+    	    guessedSoFar++;
     	  } else {
     	    console.log("Wrong");
     	    losses++;
+    	    guessesLeft--;
+    	    guessedSoFar++;
           }
 
           console.log("wins: " + win);
           console.log("losses: " + losses);
+          console.log("guesses left: " + guessesLeft);
+          console.log("guesses so far: " + guessedSoFar);
         // if (true) {}
     }
 
